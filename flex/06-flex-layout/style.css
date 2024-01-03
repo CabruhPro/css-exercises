@@ -2,13 +2,24 @@
 
 body {
   height: 100vh;
+  width: 100vw;
   margin: 0;
+  padding: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
 }
 
 img {
   width: 600px;
+  margin-bottom: 12px;
 }
 
 button {
@@ -16,6 +27,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 10px 12px;
 }
 
 input {
@@ -24,4 +36,38 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+.content{
+  align-self: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header, .footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color:black;
+  padding:16px;
+}
+
+.footer{
+  background-color: lightgray;
+}
+
+.left-links, .right-links{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  gap: 16px;
+}
+
+/* body *{
+  border: 2px solid red;
 }
